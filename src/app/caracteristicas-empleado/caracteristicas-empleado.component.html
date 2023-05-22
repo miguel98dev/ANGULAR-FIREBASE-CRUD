@@ -1,0 +1,4 @@
+<label class="me-2">Característica: </label>
+<input type="text" class="me-3" #nuevaCaracteristica>
+<!-- al pulsar el botón se llama ala función del component.ts, después toca congifurar el component.ts del padre-->
+<button class="btn btn-primary" (click)="agregaCaracteristicas(nuevaCaracteristica.value)">Añadir característica</button>

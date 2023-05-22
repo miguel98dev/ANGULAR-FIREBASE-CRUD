@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class DataServices {}","map":{"version":3,"mappings":"AAAA,OAAM,MAAOA,YAAY","names":["DataServices"],"sourceRoot":"","sources":["C:\\xampp\\htdocs\\masterD\\ANGULAR\\app-empleados\\src\\app\\data.services.ts"],"sourcesContent":["export class DataServices{\r\n\r\n    \r\n}"]},"metadata":{},"sourceType":"module","externalDependencies":[]}

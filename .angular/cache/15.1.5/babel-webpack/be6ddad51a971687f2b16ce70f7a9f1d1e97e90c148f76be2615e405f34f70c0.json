@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Empleado {\n  constructor(nombre, apellido, cargo, salario) {\n    this.nombre = '';\n    this.apellido = '';\n    this.cargo = '';\n    this.salario = 0;\n    this.nombre = nombre;\n    this.apellido = apellido;\n    this.cargo = cargo;\n    this.salario = salario;\n  }\n}","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

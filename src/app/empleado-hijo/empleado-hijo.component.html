@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col">
+    <div>
+      <!-- recorre empleados y muestra su contenido -->
+      {{ indice + 1 }}: {{ empleadoDeLista.nombre }}
+      {{ empleadoDeLista.apellido }} {{ empleadoDeLista.cargo }}
+      {{ empleadoDeLista.salario }}
+      <a [routerLink]="['/actualizar', indice]"  class="text-decoration-none" [queryParams]="{accion: '1'}"> <!-- enrutamos a /actualizar -->
+        <!-- {{ indice + 1 }}: {{ empleadoDeLista.nombre }}
+        {{ empleadoDeLista.apellido }} {{ empleadoDeLista.cargo }}
+        {{ empleadoDeLista.salario }} -->
+        Actualizar
+      </a>
+      &nbsp;
+      <a [routerLink]="['/actualizar', indice]"  class="text-decoration-none" [queryParams]="{accion: '2'}"> <!-- enrutamos a /actualizar -->
+        Eliminar
+      </a>
+    </div>
+    <!-- se hace un event binding de caracteristicas-empleado(Empleados) y se llama a la función agregarCaracterisitca de empleado-hijo-comp -->
+    <!-- muestra el template de caracteristicas-empleado -->
+    <app-caracteristicas-empleado
+      (caracteristicasEmpleados)="agregarCaracteristica($event)"
+    ></app-caracteristicas-empleado>
+    <ul style="list-style: none">
+      <li *ngFor="let caracterisitca of arrayCaracteristicas">
+        {{ caracterisitca }}
+      </li>
+    </ul>
+  </div>
+</div>
